@@ -83,8 +83,6 @@ en:
       facebook_login_description: "Allow users to sign up with their Facebook account"
       google_login: "Google login"
       google_login_description: "Allow users to sign up with their Google Account"
-      gcaccount_login: "GCaccount login"
-      gcaccount_login_description: "Allow users to sign up with their GCaccount"
       proposals: "Proposals"
       proposals_description: "Citizens' proposals are an opportunity for neighbours and collectives to decide directly how they want their city to be, after getting sufficient support and submitting to a citizens' vote"
       debates: "Debates"

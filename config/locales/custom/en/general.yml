@@ -1,0 +1,6 @@
+en:
+  omniauth:
+    openid_connect:
+      sign_in: Sign in with GCaccount
+      sign_up: Sign up with GCaccount
+      name: GCaccount

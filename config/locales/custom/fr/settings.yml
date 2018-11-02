@@ -1,0 +1,5 @@
+fr:
+  settigns:
+    feature:
+      gcaccount_login: "Se connecter avec compteGC"
+      gcaccount_login_description: "Autoriser les utilisateurs à s'inscrire avec leur compteGC"

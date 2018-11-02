@@ -1,0 +1,5 @@
+en:
+  settings:
+    feature:
+      gcaccount_login: "GCaccount login"
+      gcaccount_login_description: "Allow users to sign up with their GCaccount"
