@@ -4,3 +4,5 @@
 # * Spanish: https://github.com/consul/consul/blob/master/CUSTOMIZE_ES.md#gemfile
 #
 gem 'mini_racer', '0.2.3'
+gem 'omniauth-openid-connect', '~> 0.2.3'
+

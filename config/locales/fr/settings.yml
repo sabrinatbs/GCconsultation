@@ -47,6 +47,8 @@ fr:
       facebook_login_description: "Autoriser les utilisateurs à s'inscrire avec leur compte Facebook"
       google_login: "Se connecter avec Google"
       google_login_description: "Autoriser les utilisateurs à s’inscrire avec leur compte Google"
+      gcaccount_login: "Se connecter avec compteGC"
+      gcaccount_login_description: "Autoriser les utilisateurs à s'inscrire avec leur compteGC"
       proposals: "Propositions"
       debates: "Débats"
       polls: "Votes"

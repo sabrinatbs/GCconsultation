@@ -246,6 +246,19 @@ Devise.setup do |config|
   config.omniauth :twitter, Rails.application.secrets.twitter_key, Rails.application.secrets.twitter_secret
   config.omniauth :facebook, Rails.application.secrets.facebook_key, Rails.application.secrets.facebook_secret, scope: 'email', info_fields: 'email,name,verified'
   config.omniauth :google_oauth2, Rails.application.secrets.google_oauth2_key, Rails.application.secrets.google_oauth2_secret
+  config.omniauth :openid_connect, {
+  name: :GCaccount,
+  scope: [:openid, :email, :profile, :address],
+  response_type: :code,
+  client_options: {
+    port: 443,
+    scheme: "https",
+    host: Rails.application.secrets.GCaccount_host,
+    identifier: Rails.application.secrets.GCaccount_ID ,
+    secret: Rails.application.secrets.GCaccount_secret,
+    redirect_uri: Rails.application.secrets.GCaccount_redirect,
+  },
+}
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

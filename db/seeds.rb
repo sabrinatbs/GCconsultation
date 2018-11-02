@@ -77,6 +77,7 @@ Setting['feature.polls'] = true
 Setting['feature.twitter_login'] = true
 Setting['feature.facebook_login'] = true
 Setting['feature.google_login'] = true
+Setting['feature.gcaccount_login'] = true
 Setting['feature.public_stats'] = true
 Setting['feature.budgets'] = true
 Setting['feature.signature_sheets'] = true

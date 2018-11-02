@@ -475,6 +475,10 @@ fr:
       sign_in: S'enregistrer avec Google
       sign_up: S'enregistrer avec Google
       name: Google
+    openid_connect:
+      sign_in: S'enregistrer avec compteGC
+      sign_up: S'enregistrer avec compteGC
+      name: compteGC
     twitter:
       sign_in: S'enregistrer avec Twitter
       sign_up: S'enregistrer avec Twitter

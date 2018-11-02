@@ -11,6 +11,9 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def google_oauth2
     sign_in_with :google_login, :google_oauth2
   end
+  def openid_connect
+    sing_in_with :gcaccount_login, :openid_connect
+  end
 
   def after_sign_in_path_for(resource)
     if resource.registering_with_oauth

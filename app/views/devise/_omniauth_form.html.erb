@@ -32,6 +32,14 @@
         </div>
       <% end %>
 
+      <% if feature? :gcaccount_login %>
+      <div class="small-12 medium-6 large-4 column end">
+        <%= link_to t("omniauth.openid_connect.name"), user_omniauth_authorize_path(:openid_connect),
+                    title: t("omniauth.openid_connect.sign_in"),
+                    class: "button-google button expanded" %>
+      </div>
+      <% end %>
+
       <div class="small-12 column auth-divider">
         <span><%= t("omniauth.or_fill") %></span>
       </div>
@@ -67,6 +75,14 @@
                       title: t("omniauth.google_oauth2.sign_up"),
                       class: "button-google button expanded" %>
         </div>
+      <% end %>
+
+      <% if feature? :gcaccount_login %>
+      <div class="small-12 medium-6 large-4 column end">
+        <%= link_to t("omniauth.openid_connect.name"), user_omniauth_authorize_path(:openid_connect),
+                    title: t("omniauth.openid_connect.sign_up"),
+                    class: "button-google button expanded" %>
+      </div>
       <% end %>
 
       <div class="small-12 column auth-divider">
