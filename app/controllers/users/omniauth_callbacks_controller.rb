@@ -12,7 +12,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     sign_in_with :google_login, :google_oauth2
   end
   def openid_connect
-    sing_in_with :gcaccount_login, :openid_connect
+    sign_in_with :gcaccount_login, :openid_connect
   end
 
   def after_sign_in_path_for(resource)

@@ -13,5 +13,9 @@ usermod -g "$USER_GID" consul 2> /dev/null
 chown -R -h "$USER_UID" "$BUNDLE_PATH"
 chgrp -R -h "$USER_GID" "$BUNDLE_PATH"
 
+rake db:create
+rake db:migrate
+rake db:seed
+
 /usr/bin/sudo -EH -u consul "$@"
 

@@ -1,4 +1,4 @@
-en:
+fr:
   omniauth:
     openid_connect:
       sign_in: S'enregistrer avec compteGC
