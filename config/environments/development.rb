@@ -25,7 +25,7 @@ Rails.application.configure do
       :port                 => 2525,
       :domain               => 'smtp.mailtrap.io',
       :user_name            => Rails.application.secrets.smtp_user,
-      :password             => Rails.applicaiton.secrets.smtp_password,
+      :password             => Rails.application.secrets.smtp_password,
       :authentication => :cram_md5,
       :enable_starttls_auto => true,
       :ssl => false
