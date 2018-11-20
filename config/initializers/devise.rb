@@ -262,7 +262,7 @@ Devise.setup do |config|
       # jwks_uri: 'openid/jwk',
       identifier: Rails.application.secrets.GCaccount_ID,
       secret: Rails.application.secrets.GCaccount_secret,
-      redirect_uri: Rails.application.secrets.site_url + "/users/auth/openid_connect/callback",
+      redirect_uri: Rails.application.secrets.site_url & "/users/auth/openid_connect/callback",
     },
   }
 
