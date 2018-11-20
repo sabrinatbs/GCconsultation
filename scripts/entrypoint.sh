@@ -13,6 +13,8 @@ usermod -g "$USER_GID" consul 2> /dev/null
 chown -R -h "$USER_UID" "$BUNDLE_PATH"
 chgrp -R -h "$USER_GID" "$BUNDLE_PATH"
 
+sleep 5
+
 rake db:create
 rake db:migrate
 rake db:seed
