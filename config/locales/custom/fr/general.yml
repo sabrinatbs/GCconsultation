@@ -1,6 +1,6 @@
 fr:
   omniauth:
-    openid_connect:
+    gcaccount:
       sign_in: S'enregistrer avec compteGC
       sign_up: S'enregistrer avec compteGC
       name: compteGC

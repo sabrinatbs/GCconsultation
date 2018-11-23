@@ -11,8 +11,8 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def google_oauth2
     sign_in_with :google_login, :google_oauth2
   end
-  def openid_connect
-    sign_in_with :gcaccount_login, :openid_connect
+  def gcaccount
+    sign_in_with :gcaccount_login, :gcaccount
   end
 
   def after_sign_in_path_for(resource)
@@ -36,7 +36,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       if save_user
         identity.update(user: @user)
         sign_in_and_redirect @user, event: :authentication
-        set_flash_message(:notice, :success, kind: provider.to_s.capitalize) if is_navigational_format?
+        set_flash_message(:notice, :success, kind: @user.username) if is_navigational_format?
       else
         session["devise.#{provider}_data"] = auth
         redirect_to new_user_registration_url

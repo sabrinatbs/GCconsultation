@@ -247,7 +247,7 @@ Devise.setup do |config|
   config.omniauth :facebook, Rails.application.secrets.facebook_key, Rails.application.secrets.facebook_secret, scope: 'email', info_fields: 'email,name,verified'
   config.omniauth :google_oauth2, Rails.application.secrets.google_oauth2_key, Rails.application.secrets.google_oauth2_secret
   config.omniauth :openid_connect, {
-    name: :openid_connect,
+    name: :gcaccount,
     scope: [:openid, :email, :profile],
     response_type: :code,
     discovery: true,
@@ -262,7 +262,7 @@ Devise.setup do |config|
       # jwks_uri: 'openid/jwk',
       identifier: Rails.application.secrets.GCaccount_ID,
       secret: Rails.application.secrets.GCaccount_secret,
-      redirect_uri: Rails.application.secrets.site_url << "/users/auth/openid_connect/callback",
+      redirect_uri: Rails.application.secrets.site_url << "/users/auth/gcaccount/callback",
     },
   }
 
