@@ -15,9 +15,7 @@ chgrp -R -h "$USER_GID" "$BUNDLE_PATH"
 
 sleep 5
 
-rake db:create
 rake db:migrate
-rake db:seed
 
 /usr/bin/sudo -EH -u consul "$@"
 
