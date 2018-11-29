@@ -3,3 +3,66 @@
 // * English: https://github.com/consul/consul/blob/master/CUSTOMIZE_EN.md#css
 // * Spanish: https://github.com/consul/consul/blob/master/CUSTOMIZE_ES.md#css
 //
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'gcaccount';
+  src: font-url('gcaccount.eot');
+  src: font-url('gcaccount.eot?#iefix') format('embedded-opentype'),
+    font-url('gcaccount.woff') format('woff'),
+    font-url('gcaccount.ttf') format('truetype'),
+    font-url('gcaccount.svg#gcaccount') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.button.button-gcaccount {
+    background: #d3c9de;
+    border-left: 3px solid #46246a;
+    color: $text;
+    font-weight: bold;
+    height: $line-height * 2;
+    line-height: $line-height * 2;
+    padding: 0;
+    position: relative;
+  
+    &::before {
+      color: #46246a;
+      content: '\e800';
+      font-family: "gcaccount" !important;
+      font-size: rem-calc(24);
+      left: 0;
+      line-height: $line-height * 2;
+      padding: 0 rem-calc(20);
+      position: absolute;
+      top: 0;
+    }
+  }
+  
+  [class^="ssb-icon ssb-gcaccount"] {
+    background: #46246a;
+    background-image: none !important;
+    color: #fff;
+    height: $line-height * 2 !important;
+    position: relative;
+    width: $line-height * 2 !important;
+  
+    &::before {
+      content: '\e800';
+      font-family: "gcaccount" !important;
+      font-size: rem-calc(24);
+      left: 50%;
+      line-height: $line-height * 2;
+      margin-left: rem-calc(-11);
+      position: absolute;
+      top: 0;
+    }
+  
+    &:hover,
+    &:focus {
+      background: #fff;
+      color: #46246a;
+      opacity: 0.8
+    }
+  }
