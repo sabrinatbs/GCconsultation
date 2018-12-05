@@ -37,3 +37,6 @@ public/system/
 
 # local volume of docker database
 /postgresql_data
+
+# VS Code
+.vscode
